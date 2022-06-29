@@ -1,0 +1,41 @@
+body{
+    background-color: #1b1b32;
+    color: aliceblue;
+    font-family: Tahoma,sans-serif;
+}
+
+h1, p{
+    display: block;
+    text-align: center;
+}
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2em;
+    border: 2px solid black;
+    border-radius: 30px;
+  }
+
+fieldset{
+    border: none;
+}
+
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input{
+    margin: 10px 0 0 0;
+    width: 100%;
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    min-height: 1.5em;
+}
+ .inline{
+    width: unset;
+    margin: 0 0 0.25em 0;
+    vertical-align: middle;
+ }
