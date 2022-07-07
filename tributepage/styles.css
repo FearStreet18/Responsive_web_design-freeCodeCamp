@@ -15,8 +15,8 @@ body{
 
 main{
     background-color: rgb(217, 210, 224);
-    border: 5px solid rgb(40, 19, 66);
-    border-radius: 20px;
+    border: 5px solid rgb(59, 59, 64);
+
 }
 
 #title{
@@ -27,8 +27,6 @@ main{
 #img-div{
     background-color: rgb(154, 148, 165);
     padding: 20px 0;
-    border-radius: 20px;
-    box-shadow: 5px 10px;
 }
 #image{
     max-width: 100%;
@@ -49,6 +47,7 @@ ul{
 
 li{
     margin-bottom: 10px;
+    list-style: none;
 }
 
 #bold{
