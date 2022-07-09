@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Unregistration Form</h1>
+        <p id="description">Unregister from everything!<p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Name</label><input id="name" type="text" placeholder="Enter your name" required/>
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email</label><input id="email" type="email" placeholder="Enter your email" required/>
+        </div>
+        <div class="form-group">
+          <label id="number-label">Age<span>(optional)</span></label><input id="number" type="number" min="13" max="120" placeholder="Enter your age"/>
+        </div>
+        <div class="form-group">
+          <p>What things you procastrinate on?</p>
+          <select id="dropdown">
+            <option disabled selected value>(choose your poison)</option>
+            <option value="1">Netflix and chill</option>
+            <option value="2">Drugs</option>
+            <option value="3">Social media junk</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend procastrinating to others?</p>
+          <label>Yes</label><input type="radio" name="user-recommend" class="radio" value="yes" checked/> 
+          <label>No</label><input type="radio" name="user-recommend" class="radio" value="no"/>
+          <label>Maybe</label><input type="radio" name="user-recommend" class="radio" value="maybe"/> 
+        </div>
+
+        <div class="form-group">
+          <p>Do you cry alone at night?</p>
+          <select id="dropdown">
+            <option disabled selected value>(cry more)</option>
+            <option value="1">Yes :(</option>
+            <option value="2">No :)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>What are your goals? <span class="clue">(Check all that apply)</span></p>
+          <label>Be a failure</label>
+          <input type="checkbox" value="failure" name="goals" class="user-goals"/>
+          <label>Die</label>
+          <input type="checkbox" value="die" name="goals" class="user-goals"/>
+          <label>Wait for a mircale</label>
+          <input type="checkbox" value="miracle" name="goals" class="user-goals"/>       
+        </div>
+
+        <div class="form-group">
+          <p>Any suggestions?</p>
+          <textarea id="suggestions" name="suggestions" placeholder="Please die" class ="input-textarea"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+        
+        
+        
+      </form>
+    </div>
+  </body>
+</html>

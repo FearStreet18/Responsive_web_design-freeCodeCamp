@@ -1,0 +1,49 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgb(255, 255, 241);
+    background-color:rgb(48, 42, 85);
+    height:100%;
+    width:100%;
+    margin: 0;
+  }
+  
+  label{
+    display:block;
+    margin:2px;
+    padding:10px 0 0 0;
+  }
+  
+  h1,p {
+    display:block;
+    text-align:center;
+  
+  }
+  #description{
+    border-bottom: 2px solid rgb(65, 102, 85);
+    font-style:italic;
+  }
+  
+  
+  
+  form {
+    width: 55vw;
+      max-width: 500px;
+      min-width: 300px;
+      margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  input,textarea,select{
+    background-color:rgb(85, 52, 85);
+    border: 1px solid rgb(65, 42, 85);
+    color: rgb(255, 255, 241);
+    margin:10px 0 0 0;
+    width:100%;
+    min-height:2em;
+  }
+  
+  

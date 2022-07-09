@@ -1,0 +1,310 @@
+:root{
+    --background-color-100: linear-gradient(90deg,rgb(240, 255, 254), white );
+    --nav-bar-color: white; 
+    --text-color: rgba(0, 43, 51, 0.945);
+    --logo-color: rgba(0, 167, 159, 0.87);
+    --icon-color: rgba(0, 167, 139, 0.692);
+    --button-color: rgb(0, 92, 84);
+
+    --font-size-xxlarge: 2.5rem;
+    --font-size-xlarge: 2rem; 
+    --font-size-large: 1.2rem;
+    --font-size-medium: 1.1rem ;
+    --font-size-small: 0.7 rem;
+
+    --logo-font-weight: 700; 
+
+    --font-family: 'Barlow', sans-serif;
+    --logo-font: 'Lobster', cursive; 
+
+}
+
+*{
+    /* border: 1px solid black ; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background: var(--background-color-100);
+    font-family: var(--font-family);
+    color: var(--text-color);
+
+}
+
+/* --------------NAVBAR---------------- */
+
+#header{
+    font-size: var(--font-size-large);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    background-color: var(--nav-bar-color);
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#logo-text{
+    font-family: var(--logo-font);
+    font-weight: var(--logo-font-weight);
+    color: var(--logo-color);
+    cursor: pointer;
+}
+
+nav > ul{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-select{
+    padding: 10px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+} 
+
+/* This spacer div lies behind the fixed navbar */
+
+.spacer{
+    width: 100%;
+    height: 70px;
+}
+
+/* ----------------FORM SECTION--------------------- */
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-heading{
+    margin-top: 5vh;
+    font-size: var(--font-size-xlarge);
+}
+
+#form{
+    min-width: 32%;
+    height: 5vh;
+    margin: 5vh auto;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+#email{
+    width: 70%;
+    height: 100%;
+    border: none;
+    padding: 0 5px;
+    background-color: var(--icon-color);
+    opacity: 70%;
+    color: var(--nav-bar-color);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+}
+
+.btn{
+    width: 30%;
+    height: 100%;
+    padding: 0 5px;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--nav-bar-color);
+    font-weight: var(--logo-font-weight);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+}
+
+.btn, .buy-btn:hover{
+    background-color: var(--logo-color);
+    transition-delay: 0.5s;
+}
+
+/* ----------------ABOUT----------------------- */
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon{
+    display: inline-block;
+    color: var(--icon-color);
+    font-size: var(--font-size-xxlarge);
+}
+
+h2{
+    font-size: var(--font-size-xlarge);
+
+}
+P{
+    font-size: var(--font-size-large);
+    text-align: justify;
+}
+
+/* -----------------WATCH SECTION------------------------ */
+#watch{
+    margin: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------------PRICING--------------------- */
+
+.cards{
+    width: 60%;
+    min-width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 200px auto;
+}
+
+.details{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--icon-color);
+}
+
+.card-header{
+    width: 100%;
+    font-size: var(--font-size-xlarge);
+    background-color: var(--icon-color);
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 70%;
+}
+
+.price{
+    font-size: var(--font-size-large);
+    color: var(--icon-color);
+    font-weight: var(--logo-font-weight);
+    margin-top: 2vh;
+    font-weight: var(--logo-font-weight);
+}
+
+.card-items{
+    list-style: none;
+    margin: 10px auto;
+    font-size: var(--font-size-medium);
+}
+
+.fa-check{
+    font-size: var(--font-size-large);
+    color: var(--icon-color);
+    padding-right: 3px;
+}
+
+.fa-xmark{
+    font-size: var(--font-size-large);
+    color: rgba(196, 3, 3, 0.74);
+    padding-right: 3px;
+    
+}
+
+.buy-btn{
+    width: 50%;
+    height: 5vh;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: none;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--nav-bar-color);
+    font-weight: var(--logo-font-weight);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    
+}
+
+.details:hover{
+    transform: scale(1.1);
+}
+
+/* --------------------FOOTER----------------------*/
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    padding: 5px 5px;
+    background-color: var(--logo-color);
+    opacity: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.social{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+
+}
+
+.fa-brands{
+    font-size: var(--font-size-xxlarge);
+}
+
+/* ----------------------MEDIA QUERIES-----------------*/
+
+@media (max-width: 1280px){
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+  
+}
