@@ -1,6 +1,6 @@
 # Responsive Web Design certification by freeCodeCamp [solutions]
 
-## Guided project folder [includes](https://github.com/FearStreet18/responsive_web_design-freeCodeCamp/tree/main/guided%20projects) solution to :
+## guided projects folder [includes](https://github.com/FearStreet18/responsive_web_design-freeCodeCamp/tree/main/guided%20projects) solution to :
 
 - Learn HTML by building a cat photo app
 - Learn basic CSS by building a cafe menu 
