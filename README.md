@@ -1,4 +1,4 @@
-# Responsive Web Design certification by freeCodeCamp [solutions]
+# Responsive Web Design Certification - freeCodeCamp
 
 ## guided projects folder [includes](https://github.com/FearStreet18/responsive_web_design-freeCodeCamp/tree/main/guided%20projects) solution to :
 
